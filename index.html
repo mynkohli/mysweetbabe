@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just One Question</title>
+  <link rel="stylesheet" href="question.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/bg-loop.mp4" type="video/mp4" />
+  </video>
+
+  <div class="container">
+    <h1 class="glow-text"> Just One Question</h1>
+    <p>What u call me ?</p>
+    <input type="text" id="answer" placeholder="Type your answer here" />
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="error-message"></p>
+  </div>
+  <footer>
+     <audio id="music" autoplay controls >
+      <source src="background-music.mp3"  type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  </footer>
+
+  <script src="question.js"></script>
+</body>
+</html>

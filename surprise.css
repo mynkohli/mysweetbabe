@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  background: black;
+  overflow-x: hidden;
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff8000, 0 0 30px #ff4500;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.timeline, .gallery, .love-letter, .final-gift {
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 15px red;
+}
+
+.photos img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px orange;
+  transition: transform 0.3s;
+}
+.photos img:hover {
+  transform: scale(1.1);
+}
+
+video {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 20px;
+  border-radius: 16px;
+}
